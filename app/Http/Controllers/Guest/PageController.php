@@ -9,6 +9,6 @@ use App\Models\Train;
 class PageController extends Controller
 {
     public function index(){
-        return view('/',['trains'=>Train::all()]);
+        return view('home',['trains'=>Train::all()]);
     }
 }
